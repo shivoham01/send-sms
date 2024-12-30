@@ -18,6 +18,10 @@ app.use(bodyParser.json());
 // Use the CORS middleware
 app.use(cors());
 
+app.get("/", (req, res)=>{
+    res.send("Hello World!");
+});
+
 app.post('/send-sms', (req, res) => {
   const { phoneNumber, message } = req.body;
 
