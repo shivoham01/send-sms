@@ -22,7 +22,7 @@ app.get("/", (req, res)=>{
     res.send("Hello World!");
 });
 
-app.post('/send-sms', (req, res) => {
+app.post('https://sendsms-kqya.onrender.com/send-sms', (req, res) => {
   const { phoneNumber, message } = req.body;
 
   client.messages
